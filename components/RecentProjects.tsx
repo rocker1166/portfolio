@@ -1,9 +1,9 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -12,6 +12,7 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
+
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
@@ -27,11 +28,11 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img src="/bg.png" alt="Background" />
                 </div>
                 <img
                   src={item.img}
-                  alt="cover"
+                  alt="Cover"
                   className="z-10 absolute bottom-0"
                 />
               </div>
@@ -60,14 +61,14 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt={`icon-${index}`} className="p-2" />
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    <Link href={item.link}> Check Live Site</Link>
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
