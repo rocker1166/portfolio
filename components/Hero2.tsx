@@ -7,56 +7,37 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { Tilt } from "react-tilt";
-import { Card, CardContent } from "@/components/ui/card";
+import { useFrame } from "@react-three/fiber";
 import { Badge } from "@/components/ui/badge";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Code,
-  Briefcase,
-  MapPin,
-  Calendar,
-  Music,
-  Camera,
-  Palette,
-} from "lucide-react";
+import { Code, Video, HopOff, Pen } from "lucide-react";
 import * as THREE from "three";
-
-const personalDetails = [
-  { label: "Name", value: "Alex Quantum", icon: <Code size={18} /> },
-  {
-    label: "Role",
-    value: "Full Stack Innovator",
-    icon: <Briefcase size={18} />,
-  },
-  {
-    label: "Location",
-    value: "Silicon Valley, CA",
-    icon: <MapPin size={18} />,
-  },
-  { label: "Experience", value: "8+ Years", icon: <Calendar size={18} /> },
-];
+import { BiMovie } from "react-icons/bi";
 
 const skills = [
   { name: "React", color: "#61DAFB" },
   { name: "Node.js", color: "#339933" },
-  { name: "TypeScript", color: "#3178C6" },
+  { name: "TypeScript", color: "#007ACC" },
+  { name: "Next js", color: "#000000" },
+  { name: "MongoDB", color: "#47A248" },
+  { name: "HTML", color: "#E34F26" },
+  { name: "CSS", color: "#1572B6" },
+  { name: "JavaScript", color: "#F7DF1E" },
+  { name: "Tailwind", color: "#38B2AC" },
   { name: "Python", color: "#3776AB" },
-  { name: "AWS", color: "#FF9900" },
-  { name: "GraphQL", color: "#E10098" },
-  { name: "Docker", color: "#2496ED" },
-  { name: "Kubernetes", color: "#326CE5" },
+  { name: "LangChain", color: "#6A0DAD" },
+  { name: "AI Integration", color: "#FF6347" },
+  { name: "SQL", color: "#4479A1" },
+  { name: "Vercel", color: "#000000" },
+  { name: "WordPress", color: "#21759B" },
+  { name: "Bootstrap", color: "#7952B3" },
 ];
 
 const interests = [
   { name: "AI & Machine Learning", icon: <Code size={18} /> },
-  { name: "Quantum Computing", icon: <Code size={18} /> },
-  { name: "Music Production", icon: <Music size={18} /> },
-  { name: "Photography", icon: <Camera size={18} /> },
-  { name: "Digital Art", icon: <Palette size={18} /> },
+  { name: "Video Editing", icon: <Video size={18} /> },
+  { name: "Spirituality", icon: <HopOff size={18} /> },
+  { name: "Watching Movies", icon: <BiMovie size={18} /> },
+  { name: "Writing Books", icon: <Pen size={18} /> },
 ];
 
 function FloatingSkillSphere() {
