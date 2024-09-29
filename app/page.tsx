@@ -16,7 +16,7 @@ const Home = () => {
     <main className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <Hero />
-<div className="flex items-center justify-center h-screen">
+<div className=" items-center justify-center ">
   <p className="text-center text-sm text-white">Scroll Down ⬇️</p>
 </div>
 
