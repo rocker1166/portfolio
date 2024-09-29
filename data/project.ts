@@ -2,72 +2,145 @@ export const projects = [
   {
     id: "1",
     slug: "1",
-    name: "EcoTrack",
-    tagline: "Empowering Sustainable Living",
+    name: "Botify",
+    youtubeId: "-o-c1s3opQE",
+    tagline: "Easy Ai powred Chatbot builder",
     description:
-      "Revolutionary app transforming daily habits into eco-friendly actions",
+      "An A.I chatbot builder website for organiztion including analytics, ticket booking and many more in simple steps",
     videoUrl: "https://example.com/ecotrack-demo.mp4",
-    techStack: ["React Native", "Node.js", "TensorFlow", "MongoDB"],
+    techStack: [
+      "Next js",
+      "Vercel ai sdk",
+      "Groq llm",
+      "MongoDB",
+      "tailwind",
+      "shadcn",
+      "edge storage",
+      "vercel",
+    ],
     coolFeatures: [
       {
         icon: "Zap",
-        title: "AI-Powered Recommendations",
+        title: "AI-Powered Chatbot",
         description:
-          "Get personalized eco-friendly suggestions based on your lifestyle",
+          "Allow organization to make own ai chatbot easily like a form.",
       },
       {
         icon: "Leaf",
-        title: "Real-time Carbon Footprint",
-        description: "Track your environmental impact with live updates",
+        title: "Real-time Analytics",
+        description:
+          "Get insight on usages of chatbot, user visited, no of ticket booked through chatbot, frequent question asked etc",
       },
       {
         icon: "Users",
-        title: "Community Challenges",
+        title: "Cutom Tools",
         description:
-          "Compete with friends and earn rewards for sustainable actions",
+          "Organization can add tool like ticket booking, complain form , navigations bar into chatbot with one click ",
       },
       {
         icon: "Globe",
-        title: "Global Impact Visualization",
+        title: "Automation",
         description:
-          "See how your actions contribute to worldwide sustainability efforts",
+          "Through tools like ticket booking , navigation , availibity status etc many work can be automated",
       },
     ],
     githubUrl: "https://github.com/example/ecotrack",
-    liveUrl: "https://ecotrack-demo.example.com",
+    liveUrl: "https://devnexus-2024.vercel.app/",
   },
   {
     id: "2",
     slug: "2",
-    name: "Artify",
-    tagline: "AI-Powered Digital Art Creation",
+    youtubeId: "zOO_WGOb0vs",
+    name: "LastMinuteEnginnering",
+    tagline: "AI-Powered digital learning tool with personal cahtbot",
     description:
-      "Transform your ideas into stunning digital art with the power of AI",
+      "A platfrom fro learner to learn, take notes, practice question with help of ai",
     videoUrl: "https://example.com/artify-demo.mp4",
-    techStack: ["React", "Python", "TensorFlow", "AWS"],
+    techStack: [
+      "React",
+      "next js",
+      "tailwind",
+      "shadcn",
+      "mangodb",
+      "firebase",
+      "gemini llm",
+    ],
     coolFeatures: [
       {
         icon: "Palette",
-        title: "Style Transfer",
-        description: "Apply famous art styles to your photos with one click",
+        title: "Ai Notes",
+        description:
+          "Ai genarted notes with dynamic note taking system, take note and customize",
       },
       {
         icon: "Zap",
-        title: "AI Art Generation",
-        description: "Create unique artworks from text descriptions",
+        title: "Youtube video ",
+        description:
+          "Get all video realted to the searched topic to avoid distraction.",
       },
       {
         icon: "Shield",
-        title: "Copyright Protection",
-        description: "Automatically watermark and protect your creations",
+        title: "Ai Question",
+        description: "Get question according need through ai ",
       },
       {
         icon: "Rocket",
-        title: "NFT Integration",
-        description: "Easily mint and sell your art as NFTs",
+        title: " Integrated Chatbot",
+        description:
+          "Get intregated chatbot, ask question and get personalized answer",
       },
     ],
     githubUrl: "https://github.com/example/artify",
-    liveUrl: "https://artify-demo.example.com",
+    liveUrl: "https://nextjs-lastminuteengineering-webapp-xi.vercel.app/",
+  },
+  {
+    id: "3",
+    slug: "3",
+    name: "FoodExpress",
+    youtubeId: "pAdxm5Qx1e0",
+    tagline: "Simple Creative webpage for a food plaza",
+    description: "Attract user and order food the website.",
+    videoUrl: "https://example.com/artify-demo.mp4",
+    techStack: ["React", "next js", "Tailwind", "shadcn"],
+    coolFeatures: [
+      {
+        icon: "Palette",
+        title: "Creative Design",
+        description: "Simple yet cool designed landing page.",
+      },
+      {
+        icon: "Zap",
+        title: "Filter option",
+        description: "Filter food according the choice.",
+      },
+    ],
+    githubUrl: "https://github.com/example/artify",
+    liveUrl: "https://innovation24-sumanjana.vercel.app/",
+  },
+  {
+    id: "4",
+    slug: "4",
+    name: "HomeAi",
+    tagline: "AI-Powered cahtbot for digital home ",
+    youtubeId: "NkoU-RuNwC0",
+    description:
+      "All information of home and get real time data about elrctric usages and more",
+    videoUrl: "https://example.com/artify-demo.mp4",
+    techStack: ["React", "groq llm", "shadcn", "vercel"],
+    coolFeatures: [
+      {
+        icon: "Palette",
+        title: "Tools",
+        description: "one click data about camera , electric usages and more.",
+      },
+      {
+        icon: "Zap",
+        title: "Ai intregation",
+        description:
+          "The model is train on th e home details data, and it answer on basis of it.",
+      },
+    ],
+    githubUrl: "https://homeai-ruby.vercel.app/",
+    liveUrl: "hhttps://homeai-ruby.vercel.app/",
   },
 ];

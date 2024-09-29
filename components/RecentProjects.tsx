@@ -19,10 +19,7 @@ const RecentProjects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
+            <PinContainer title={item.title} href="https://twitter.com/suman">
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -30,6 +27,7 @@ const RecentProjects = () => {
                 >
                   <img src="/bg.png" alt="Background" />
                 </div>
+
                 <img
                   src={item.img}
                   alt="Cover"
@@ -38,7 +36,7 @@ const RecentProjects = () => {
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
+                <Link href={item.link}> {item.title}</Link>
               </h1>
 
               <p
@@ -48,7 +46,7 @@ const RecentProjects = () => {
                   margin: "1vh 0",
                 }}
               >
-                {item.des}
+                <Link href={item.link}> {item.des}</Link>
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3">

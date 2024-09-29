@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 import {
   ArrowUpRight,
   Github,
-  Play,
-  Pause,
   Moon,
   Sun,
   Coffee,
@@ -41,7 +39,7 @@ interface Project {
   name: string;
   tagline: string;
   description: string;
-  videoUrl: string;
+  youtubeId: string;
   techStack: string[];
   coolFeatures: {
     icon: string;
@@ -57,21 +55,8 @@ interface ProjectShowcaseProps {
 }
 
 export default function ProjectShowcase({ project }: ProjectShowcaseProps) {
-  const [isPlaying, setIsPlaying] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [coffeeCount, setCoffeeCount] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const togglePlay = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -121,26 +106,22 @@ export default function ProjectShowcase({ project }: ProjectShowcaseProps) {
           transition={{ duration: 0.5 }}
           className="relative overflow-hidden rounded-xl shadow-2xl"
         >
-          <video ref={videoRef} className="w-full" loop muted playsInline>
-            <source src={project.videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="w-full">
+            <iframe
+              width="100%"
+              height="315"
+              src={`https://www.youtube.com/embed/${project.youtubeId}`}
+              title={project.name}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-xl"
+            ></iframe>
+          </div>
           <div className="absolute bottom-0 left-0 p-6">
-            <p className="max-w-2xl text-lg font-medium text-white">
+            <p className="max-w-2xl text-lg font-medium text-blue-700">
               {project.description}
             </p>
           </div>
-          <Button
-            className="absolute bottom-6 right-6 rounded-full bg-white/20 p-3 backdrop-blur-sm hover:bg-white/30"
-            onClick={togglePlay}
-          >
-            {isPlaying ? (
-              <Pause className="h-6 w-6" />
-            ) : (
-              <Play className="h-6 w-6" />
-            )}
-          </Button>
         </motion.div>
 
         <motion.div
