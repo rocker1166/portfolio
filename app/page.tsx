@@ -20,8 +20,9 @@ const Home = () => {
         <AdvancedPortfolioHero />
 
         <Grid />
-        <TimelineDemo />
         <RecentProjects />
+        <TimelineDemo />
+
         <Clients />
         <Experience />
         <Approach />

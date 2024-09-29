@@ -32,14 +32,22 @@ const Hero = () => {
           <p className="text-lg md:text-xl lg:text-2xl mb-8">
             Hi! I am Suman, a Full Stack Developer from earth 🌍.
           </p>
-
-          <a href="#project">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex gap-2">
+            <a href="https://drive.google.com/file/d/1-vlbHkzL9387oOArj6-QFKfUJiAkaQLv/view?usp=sharing">
+              <MagicButton
+                title="Downlaod CV"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a href="/project/1">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </motion.div>
 
         <motion.div

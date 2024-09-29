@@ -10,8 +10,8 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-              <Link href="/"> illusion</Link>
+            <span className="text-2xl   font-serif font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+              <Link href="/">Suman Jana</Link>
             </span>
           </div>
           <div className="hidden md:flex md:space-x-8 items-center text-white">
