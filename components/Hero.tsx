@@ -33,7 +33,7 @@ const Hero = () => {
             Hi! I am Suman, a Full Stack Developer from earth 🌍.
           </p>
           <div className="flex gap-2">
-            <a href="https://drive.google.com/file/d/1nSVpNE1qp7DTm1s5nA8QcsxXKub-Cdyg/view?usp=drive_link">
+            <a href="https://drive.usercontent.google.com/u/0/uc?id=1k5rsYEQYysxlpN-ac4YMgnBTA5NE_l63&export=download">
               <MagicButton
                 title="Downlaod CV"
                 icon={<FaLocationArrow />}
