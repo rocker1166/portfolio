@@ -16,8 +16,7 @@ const RecentProjects = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        <span className="text-purple">Recent projects</span>
       </motion.h1>
 
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">

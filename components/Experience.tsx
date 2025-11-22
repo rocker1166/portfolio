@@ -21,6 +21,7 @@ const Experience = () => {
         {workExperience.map((card, index) => (
           <motion.div
             key={card.id}
+            className="h-full"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -37,10 +38,10 @@ const Experience = () => {
                 borderRadius: `calc(1.75rem* 0.96)`,
                 backdropFilter: "blur(10px)",
               }}
-              className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+              className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 h-full"
             >
               <motion.div 
-                className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2"
+                className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 h-full"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
