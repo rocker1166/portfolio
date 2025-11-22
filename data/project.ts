@@ -2,6 +2,54 @@ export const projects = [
   {
     id: "1",
     slug: "1",
+    name: "IntelliSupply",
+    youtubeId: "-o-c1s3opQE",
+    tagline: "AI-Powered Supply Chain Digital Twin Platform",
+    description:
+      "IntelliSupply is an enterprise platform that uses AI-powered digital twins and LLMs to simulate supply chain disruptions, predict operational risks, and recommend real-time mitigation strategies. Winner of 100agentdev hackathon.",
+    videoUrl: "https://example.com/intellisupply-demo.mp4",
+    techStack: [
+      "Next js",
+      "TypeScript",
+      "Vercel ai sdk",
+      "Supabase",
+      "Shadcn",
+      "AI Agents",
+      "LLM",
+      "Digital Twins",
+    ],
+    coolFeatures: [
+      {
+        icon: "Zap",
+        title: "AI-Powered Digital Twins",
+        description:
+          "Create digital twins of supply chain operations to simulate and predict disruptions in real-time.",
+      },
+      {
+        icon: "Leaf",
+        title: "Risk Prediction",
+        description:
+          "Leverage LLMs to predict operational risks and provide actionable insights for supply chain management.",
+      },
+      {
+        icon: "Users",
+        title: "Real-time Mitigation",
+        description:
+          "Get automated recommendations for real-time mitigation strategies to minimize supply chain disruptions.",
+      },
+      {
+        icon: "Globe",
+        title: "Agent System",
+        description:
+          "Built comprehensive AI agent system for intelligent supply chain decision making and automation.",
+      },
+    ],
+    githubUrl: "https://github.com/rocker1166",
+    liveUrl: "https://sumanjana.xyz",
+  },
+  {
+    id: "2",
+    slug: "2",
     name: "Botify",
     youtubeId: "-o-c1s3opQE",
     tagline: "Easy Ai powred Chatbot builder",
@@ -48,8 +96,8 @@ export const projects = [
     liveUrl: "https://devnexus-2024.vercel.app/",
   },
   {
-    id: "2",
-    slug: "2",
+    id: "3",
+    slug: "3",
     youtubeId: "zOO_WGOb0vs",
     name: "LastMinuteEnginnering",
     tagline: "AI-Powered digital learning tool with personal cahtbot",
@@ -92,30 +140,6 @@ export const projects = [
     ],
     githubUrl: "https://github.com/example/artify",
     liveUrl: "https://nextjs-lastminuteengineering-webapp-xi.vercel.app/",
-  },
-  {
-    id: "3",
-    slug: "3",
-    name: "FoodExpress",
-    youtubeId: "pAdxm5Qx1e0",
-    tagline: "Simple Creative webpage for a food plaza",
-    description: "Attract user and order food the website.",
-    videoUrl: "https://example.com/artify-demo.mp4",
-    techStack: ["React", "next js", "Tailwind", "shadcn"],
-    coolFeatures: [
-      {
-        icon: "Palette",
-        title: "Creative Design",
-        description: "Simple yet cool designed landing page.",
-      },
-      {
-        icon: "Zap",
-        title: "Filter option",
-        description: "Filter food according the choice.",
-      },
-    ],
-    githubUrl: "https://github.com/example/artify",
-    liveUrl: "https://innovation24-sumanjana.vercel.app/",
   },
   {
     id: "4",
