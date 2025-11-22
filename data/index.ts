@@ -90,7 +90,7 @@ export const projects = [
   {
     id: 4,
     title: "Home Ai",
-    des: "A ai bot who can control home light, can say electric usages, tell about the home and many more",
+    des: "An AI bot who can control home light, can say electric usages, tell about the home and many more",
     img: "/mine/project/4.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/project/4",
