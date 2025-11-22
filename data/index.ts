@@ -42,7 +42,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building AI-powered supply chain solutions",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -65,6 +65,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "IntelliSupply",
+    des: "AI-powered supply chain platform using digital twins and LLMs to simulate disruptions and predict risks. Winner of 100agentdev hackathon.",
+    img: "/mine/project/5.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/project/5",
+  },
+  {
+    id: 2,
     title: "Botify",
     des: "An A.I chatbot builder website for organiztion including analytics, ticket booking and many more in simple steps",
     img: "/mine/project/1.png",
@@ -72,7 +80,7 @@ export const projects = [
     link: "/project/1",
   },
   {
-    id: 2,
+    id: 3,
     title: "LastMinuteEngineering",
     des: "An A.I powerd website for learning with ai chatbot,digital notes and open source study material and many more.",
     img: "/mine/project/2.png",
@@ -80,17 +88,9 @@ export const projects = [
     link: "/project/2",
   },
   {
-    id: 3,
-    title: "FoodExpress",
-    des: "A website for a food plaza to book food and order online with food flitering option. Mostly frontend part done.",
-    img: "/mine/project/3.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/project/3",
-  },
-  {
     id: 4,
     title: "Home Ai",
-    des: "A ai bot who can conteol home light, can say electric usages, tell about the home and many more",
+    des: "An AI bot who can control home light, can say electric usages, tell about the home and many more",
     img: "/mine/project/4.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/project/4",
@@ -151,29 +151,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Co-founder of LastMinuteEngineering",
-    desc: "Devoloper and cofounder of LME.",
+    title: "Lead Full Stack Developer - FLUXMAP",
+    desc: "Developed website frontend, backend and CI/CD pipeline. Managed 90K PII cleanup with zero downtime.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Ai Lead ",
-    desc: "Ai and frontend lead of Botify.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Frontend Developer - LINEUPX",
+    desc: "Developed new frontend features and integrated with backend. Created pixel-perfect UI from Figma designs.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance BitCoin Project",
-    desc: "Led the dev of a bitcoin website frontend development .",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Lead Developer/Co-founder - LastMinuteEngineering",
+    desc: "Developed company website with AI features, achieving 20% increase in user engagement.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "100agentdev Hackathon Winner",
+    desc: "Won renowned international hackathon over 600+ teams with IntelliSupply project.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -193,6 +193,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/suman-jana-678842212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    link: "https://www.linkedin.com/in/suman-jana-dev",
   },
 ];
