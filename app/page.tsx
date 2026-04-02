@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
+import Products from "@/components/Products";
 import RecentProjects from "@/components/RecentProjects";
 
 import AdvancedPortfolioHero from "@/components/Hero2";
@@ -28,6 +29,7 @@ const Home = () => {
 
         <Clients />
         <Experience />
+        <Products />
         <Approach />
         <Footer />
       </div>
